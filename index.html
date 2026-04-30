@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative and Descriptive Paper Title</title>
+    
+    <meta property="og:image" content="./resources/teaser.png"/> 
+    <meta property="og:title" content="Creative and Descriptive Paper Title." />
+    <meta property="og:description" content="Paper description." />
+
+    <style type="text/css">
+        /* 全局与排版设置 */
+        body {
+            font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 1.6;
+            color: #333;
+            margin: 0 auto;
+            padding: 20px;
+            max-width: 900px; 
+        }
+        
+        h1, h2, h3 {
+            font-weight: 300;
+            text-align: center;
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+        
+        a {
+            color: #1367a7;
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+        a:hover {
+            color: #208799;
+        }
+
+        hr {
+            border: 0;
+            height: 1px;
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
+            margin: 40px 0;
+        }
+
+        /* 实用布局类 */
+        .text-center {
+            text-align: center;
+        }
+        
+        /* 使用 Flexbox 替代原本的 Table 布局 */
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px 40px;
+            margin-bottom: 20px;
+        }
+
+        /* 图片自适应 */
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .round-img {
+            border: 1px solid #eeeeee;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        .caption {
+            font-size: 15px;
+            color: #666;
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        /* 经典的层叠纸张特效 */
+        .layered-paper-big { 
+            box-shadow:
+                0px 0px 1px 1px rgba(0,0,0,0.35), 
+                5px 5px 0 0px #fff, 
+                5px 5px 1px 1px rgba(0,0,0,0.35), 
+                10px 10px 0 0px #fff, 
+                10px 10px 1px 1px rgba(0,0,0,0.35), 
+                15px 15px 0 0px #fff, 
+                15px 15px 1px 1px rgba(0,0,0,0.35), 
+                20px 20px 0 0px #fff, 
+                20px 20px 1px 1px rgba(0,0,0,0.35); 
+            margin-right: 20px;
+            margin-bottom: 20px;
+            height: 175px;
+            max-width: 100%;
+        }
+
+        /* 论文引用区块 */
+        .paper-block {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        /* ================= 新增：3列网格布局 ================= */
+        .results-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 强制每行3列，平分宽度 */
+            gap: 30px; /* 每个模块之间的间距 */
+            margin-top: 30px;
+        }
+        
+        .result-unit {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .result-unit h3 {
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-size: 20px;
+        }
+
+        .result-unit audio {
+            width: 100%;
+            margin-bottom: 15px; /* 音频和图片之间的间距 */
+            outline: none;
+        }
+
+        /* 移动端响应式适配：屏幕变小时自动变为2列或1列 */
+        @media (max-width: 768px) {
+            .results-grid {
+                grid-template-columns: repeat(2, 1fr); 
+            }
+        }
+        @media (max-width: 480px) {
+            .results-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        /* ================================================== */
+    </style>
+</head>
+
+<body>
+    
+    <header class="text-center">
+        <h1 style="font-size: 36px; margin-top: 20px;">Creative and Descriptive Paper Title</h1>
+        
+        <div class="flex-container" style="font-size: 22px;">
+            <span><a href="https://en.wikipedia.org/wiki/James_J._Gibson">First Author</a><sup>1</sup></span>
+            <span><a href="https://en.wikipedia.org/wiki/James_J._Gibson">Second Author</a><sup>1,2</sup></span>
+            <span><a href="https://en.wikipedia.org/wiki/James_J._Gibson">Third Author</a><sup>2</sup></span>
+        </div>
+        
+        <div class="text-center" style="font-size: 18px; margin-bottom: 20px; color: #666;">
+            <span><sup>1</sup>University of ABC</span> &nbsp;&nbsp;&nbsp;
+            <span><sup>2</sup>XYZ Research Institute</span>
+        </div>
+
+        <div class="flex-container" style="font-size: 22px;">
+            <span><a href="">[Paper]</a></span>
+            <span><a href="https://github.com/richzhang/webpage-template">[GitHub]</a></span>
+            <span><a href="">[Dataset]</a></span>
+        </div>
+    </header>
+
+    <section>
+        <div class="text-center">
+            <img class="round-img" style="max-width: 200px; width: 50%;" src="./static/logo/logo.png" alt="Project Teaser"/>
+            
+        </div>
+    </section>
+
+    <hr>
+
+    <section>
+        <h2>Abstract</h2>
+        <p style="text-align: justify;">
+            This is my abstract. Write a clear and engaging summary of your paper here. It should briefly introduce the problem, your proposed method, and the key results or contributions. Modern layouts prefer justified text for abstracts to maintain a clean block appearance.
+        </p>
+    </section>
+
+    <hr>
+    
+    <section>
+        <h2>Method & Code</h2>
+        <div class="text-center">
+            <img class="round-img" style="max-width: 600px; width: 100%;" src="./static/table/table.png" alt="Method Diagram"/>
+            <p class="caption">Short description of your method or pipeline goes here.</p>
+        </div>
+        <div class="text-center" style="margin-top: 20px;">
+            <span style="font-size:24px"><a href='https://github.com/richzhang/webpage-template'>[View Code on GitHub]</a></span>
+        </div>
+    </section>
+
+    <hr>
+
+    <section>
+        <h2>Speech Separation Demo</h2>
+        
+        <div class="results-grid">
+            
+            <div class="result-unit">
+                <h3>Sample 1</h3>
+                <audio controls>
+                    <source src="./static/audio/fileid_1.wav" type="audio/mpeg">
+                </audio>
+                <img class="round-img" src="./static/image/test1.png" alt="Sample 1"/>
+            </div>
+
+            <div class="result-unit">
+                <h3>Sample 2</h3>
+                <audio controls>
+                    <source src="./static/audio/fileid_1.wav" type="audio/mpeg">
+                </audio>
+                <img class="round-img" src="./static/image/test1.png" alt="Sample 2"/>
+            </div>
+
+            <div class="result-unit">
+                <h3>Sample 3</h3>
+                <audio controls>
+                    <source src="./static/audio/fileid_1.wav" type="audio/mpeg">
+                </audio>
+                <img class="round-img" src="./static/image/test1.png" alt="Sample 3"/>
+            </div>
+
+            <div class="result-unit">
+                <h3>Sample 4</h3>
+                <audio controls>
+                    <source src="./static/audio/fileid_1.wav" type="audio/mpeg">
+                </audio>
+                <img class="round-img" src="./static/image/test1.png" alt="Sample 4"/>
+            </div>
+
+            <div class="result-unit">
+                <h3>Sample 5</h3>
+                <audio controls>
+                    <source src="./static/audio/fileid_1.wav" type="audio/mpeg">
+                </audio>
+                <img class="round-img" src="./static/image/test1.png" alt="Sample 5"/>
+            </div>
+
+            <div class="result-unit">
+                <h3>Sample 6</h3>
+                <audio controls>
+                    <source src="./static/audio/fileid_1.wav" type="audio/mpeg">
+                </audio>
+                <img class="round-img" src="./static/image/test1.png" alt="Sample 6"/>
+            </div>
+
+        </div>
+    </section>
+    
+
+    
+
+    <hr>
+
+    <section>
+        <h2>Acknowledgements</h2>
+        <p style="text-align: center; font-size: 16px; color: #555;">
+            Website template was borrowed from <a href="https://richzhang.github.io/colorization/">Colorful Image Colorization </a> and <a href="https://nerfies.github.io/"> Nerfies</a>; the code can be found <a href="https://github.com/richzhang/webpage-template">here</a>and <a href="https://github.com/nerfies/nerfies.github.io">here</a>.
+        </p>
+    </section>
+
+</body>
+</html>
